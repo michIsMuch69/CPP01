@@ -6,7 +6,7 @@
 /*   By: jedusser <jedusser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 09:04:51 by jedusser          #+#    #+#             */
-/*   Updated: 2024/10/25 11:45:50 by jedusser         ###   ########.fr       */
+/*   Updated: 2024/10/28 10:02:09 by jedusser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,21 +34,18 @@ Zombie* Zombie::newZombie(std::string name)
 
 void Zombie::randomChump(std::string name)
 {
-    newZombie(name);
-    Zombie::announce();
+    Zombie *zombieFactory = Zombie::newZombie(name);
+    // newZombie(name);
+    zombieFactory->announce();
+    delete zombieFactory;
 }
 
 int main()
 {
+    Zombie *zombieFactory = NULL;
     std::string name;
-    
     std::cout << "Enter a name" << std::endl;
-    std::cin >> name;
-    
-    Zombie zombieFactory(name);
-    
-    zombieFactory.randomChump(name); 
-    
-    
+    std::cin >> name;    
+    zombieFactory->randomChump(name);
     return(0);
 }
