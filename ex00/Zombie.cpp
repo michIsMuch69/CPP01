@@ -6,7 +6,7 @@
 /*   By: jedusser <jedusser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 07:44:09 by jedusser          #+#    #+#             */
-/*   Updated: 2024/10/28 10:22:08 by jedusser         ###   ########.fr       */
+/*   Updated: 2024/10/28 11:15:43 by jedusser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Zombie::Zombie(const std::string &name) : _name(name)
 
 Zombie::~Zombie(void)
 {
-    std::cout << "zombie [" << _name << "] destroyed" << std::endl;
+    std::cout << "Zombie [" << _name << "] destroyed" << std::endl;
 }
 
 
