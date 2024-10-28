@@ -6,7 +6,7 @@
 /*   By: jedusser <jedusser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 07:40:53 by jedusser          #+#    #+#             */
-/*   Updated: 2024/10/28 10:01:48 by jedusser         ###   ########.fr       */
+/*   Updated: 2024/10/28 11:19:44 by jedusser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Zombie
         void announce(void);
         static Zombie* newZombie(std::string name);
         static void randomChump(std::string name);
-        Zombie(const std::string &name); //init
+        Zombie(const std::string &name);
         ~Zombie();
 };
 
