@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jedusser <jedusser@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/10/25 08:03:20 by jedusser          #+#    #+#              #
-#    Updated: 2024/10/28 10:23:39 by jedusser         ###   ########.fr        #
+#    Created: 2024/10/28 10:17:20 by jedusser          #+#    #+#              #
+#    Updated: 2024/10/28 10:26:32 by jedusser         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,19 +16,16 @@ CFLAGS = -Wall -Wextra -Werror -g -std=c++98
 SRC_DIR = .
 OBJ_DIR = obj
 
-NAME = zombie
+NAME = zombiehorde
 
 SRCS = main.cpp \
        Zombie.cpp \
-	   newZombie.cpp \
-	   randomChump.cpp
+	   zombieHorde.cpp \
 
 
 OBJS = $(OBJ_DIR)/main.o \
 		$(OBJ_DIR)/Zombie.o \
-		$(OBJ_DIR)/newZombie.o \
-		$(OBJ_DIR)/randomChump.o
-
+		$(OBJ_DIR)/zombieHorde.o \
 
 all: $(NAME)
 

@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jedusser <jedusser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/25 07:44:09 by jedusser          #+#    #+#             */
-/*   Updated: 2024/10/28 10:22:08 by jedusser         ###   ########.fr       */
+/*   Created: 2024/10/28 10:18:48 by jedusser          #+#    #+#             */
+/*   Updated: 2024/10/28 10:22:21 by jedusser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(const std::string &name) : _name(name)
-{}
 
-Zombie::~Zombie(void)
+void Zombie::randomChump(std::string name)
 {
-    std::cout << "zombie [" << _name << "] destroyed" << std::endl;
-}
-
-
-void    Zombie::announce(void)
-{
-    std::cout << _name << " : BraiiiiiiinnnzzzZ..." << std::endl;
+    Zombie *zombieFactory = Zombie::newZombie(name);
+    zombieFactory->announce();
+    delete zombieFactory;
 }
