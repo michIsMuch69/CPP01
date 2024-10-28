@@ -6,7 +6,7 @@
 /*   By: jedusser <jedusser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 10:25:32 by jedusser          #+#    #+#             */
-/*   Updated: 2024/10/28 10:26:59 by jedusser         ###   ########.fr       */
+/*   Updated: 2024/10/28 10:33:02 by jedusser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Zombie* Zombie::zombieHorde(int N, std::string name)
     
     horde = new Zombie[N];
     i = 0;
-    while (i < N )
+    while (i < N)
     {
         horde[i] =  Zombie(name);
         i++;
